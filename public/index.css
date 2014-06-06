@@ -1,0 +1,58 @@
+body {
+  background: url('/images/001.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Helvetica;
+}
+
+body .backpicture {
+  width: 700px;
+  margin: 30px;
+  background: rgba(204,229,255,0.4);
+  padding: 15px;
+  border-radius: 25px;
+  float: left;
+}
+
+img .logo {
+  float: left;
+}
+
+h1 {
+  color: white;
+
+}
+
+p a {
+  color: white;
+  background-color: rgba(204,229,255,0.2);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+h5 {
+  font-weight: 100;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  bottom:0;
+  width:100%;
+  background-color:#151211;
+  line-height: 16px;
+  padding: 0px 0px 20px 0px;
+}
+
+.copy {
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: block;
+}
+
+.cb {
+  clear: both;
+}

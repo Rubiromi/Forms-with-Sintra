@@ -1,0 +1,34 @@
+<!-- <% if @name && @age %>
+  <h1>I am <%= @name %> and <%= @age %> years old.</h1>
+<% end %> -->
+
+<h1>*** About <%= @name %> ***</h1>
+<ul><b>
+  <li>Name: <%= @name %></li>
+  <li>Nick Name: <%= @nn %></li>
+  <li>Age: <%= @age %></li>
+  <li>Gender: <%= @sex %></li>
+  <li>Marital Status: <%= @ms %></li>
+  <!-- <li>Personal Items: <%= @item %></li> -->
+  <% if @hobb != nil %>
+    <li>
+      Hobbies:
+      <ul>
+        <% @hobb.each do |hobb| %>
+          <li><%= hobb %></li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+
+
+
+  <li>Lang: <%= @language %></li>
+  <li>Speaking Language: <%= @speaking %></li>
+  <li>Bio: <%= @bio %></li>
+  <li>Business Plan: <%= @bp %></li>
+</b></ul>
+
+<p>
+  <a href="/"><< Back to home</a>
+</p>

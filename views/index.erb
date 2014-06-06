@@ -1,0 +1,102 @@
+<!-- form is html tag that let user interact with website
+<form> </form>  form get information from user, save the information in database,
+and display on the website, next time user open the website -->
+
+<!-- from can NOT have another form tag inside -->
+
+<!-- form takes few attr, like;
+action ="specified which url the data send it to."
+method = "in which this data to be sent. GET or POST. Do I wanna GET info, or POST(send) this info."
+  GET = like for search engine. Getting something out of server.
+  POST = posting something to server
+element = "input" -> hidden(behind the seen), text(for single line of text like names) -> text, email, number, url, passward(does *** by itself), radio(O or O), checkbox(O and O), submit(creates button for me), reset(creates button too),
+          "select",
+          "button",
+          "textarea"(big chunk of text like bio and such) -->
+
+<!-- <form action="/" method="post">
+This was set to return inputs to the same page -->
+<!-- now I am sending data to /about page -->
+
+  <form role="form" action="/about" method="post">
+    <h3><b>Please enter your information.</b></h3>
+    <p>
+      <label>Name:</label>
+      <input class="form-control" type="text" value="" name="name" placeholder="Please enter your name" />
+    </P>
+
+    <p>
+      <label>Nick Name:</label>
+      <input class="form-control" type="text" value="" name="nn" />
+    </P>
+
+    <p>
+      <label>Age:</label>
+      <input class="form-control" type="text" value="" name="age" />
+    </p>
+
+    <p>
+      <label>Gender:</label>
+      <input type="radio" name="sex" value="male">Male
+      <input type="radio" name="sex" value="female">Female
+    </p>
+
+    <p>
+      <label>Marital Status:</label>
+      <input type="radio" name="ms" value="Married">Married
+      <input type="radio" name="ms" value="Single">Single
+      <input type="radio" name="ms" value="N/A">N/A
+    </p>
+
+    <p>
+      <label>Programming Language:</label>
+      <select name="language">
+        <option value="Ruby">Ruby</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Whitespace">Whitespace</option>
+        <option value="JQuery">JQuery</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Speaking Language:</label>
+      <select name="speaking">
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="中文 - Chinese">中文</option>
+        <option value="日本語 - Japanese">日本語</option>
+        <option value="한국어 - Korean">한국어</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Hobbies:</label>
+      <h5>Please check everything you are interested in.</h5>
+      <input type="checkbox" name="hobb[]" value="Movies">Movies
+      <input type="checkbox" name="hobb[]" value="Travel">Travel
+      <input type="checkbox" name="hobb[]" value="Eat Out">Eat Out
+      <input type="checkbox" name="hobb[]" value="Computer Games">Computer Games
+      <input type="checkbox" name="hobb[]" value="Programming">Programming
+      <input type="checkbox" name="hobb[]" value="Work Out">Work Out
+    </p>
+
+    <p>
+      <label>Password:</label>
+      <h5>Password has to be more than 5 charactors long</h5>
+      <input type="password" value="" name="pwd">
+    </p>
+
+    <p>
+      <label>Bio:</label><br />
+      <textarea name="bio" rows="8" cols="40"></textarea>
+      <!-- textarea has to have closeing tag!!! -->
+    </p>
+
+    <p>
+      <label>Business Plan:</label><br />
+      <textarea name="bp" rows="8" cols="40"></textarea>
+    </p>
+
+    <input class="btn btn-warning" type="submit" value="Send Data" />
+    <!-- value = what it says on submit button -->
+  </form>
